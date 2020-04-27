@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class core.EventAnalysisTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class core.EventAnalysisTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/core.html">core</a> &gt; EventAnalysisTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.037s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">analyzeDurationReturnedSmallerListCauseOfBadState</td>
+<td class="success">0.926s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">analyzeDurationReturnedSmallerListCauseOfWrongOfTheSameEvent</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">analyzeDurationWhenTimestampOfTheEventIsTheSame</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:22:52.878 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+19:22:52.989 [Test worker] DEBUG core.EventReader - Amount of events collected: 10
+19:22:52.990 [Test worker] DEBUG core.EventReader - Grouping events by ID
+19:22:52.992 [Test worker] DEBUG core.EventReader - Aggregated: 5 pair of events.
+19:22:52.994 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+19:22:52.994 [Test worker] DEBUG core.EventAnalysis - Aggregated events with the same state. Cannot evaluate event duration
+19:22:52.994 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+19:22:52.999 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+19:22:52.999 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrc
+19:22:53.000 [Test worker] DEBUG core.EventAnalysis - Event duration: 8
+19:22:53.000 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrd
+19:22:53.001 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgrd
+19:22:53.001 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgre
+19:22:53.001 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgre
+19:22:53.002 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+19:22:53.052 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+19:22:53.057 [Test worker] DEBUG core.EventReader - Amount of events collected: 10
+19:22:53.057 [Test worker] DEBUG core.EventReader - Grouping events by ID
+19:22:53.058 [Test worker] DEBUG core.EventReader - Aggregated: 5 pair of events.
+19:22:53.058 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+19:22:53.058 [Test worker] DEBUG core.EventAnalysis - Event duration: 5
+19:22:53.058 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+19:22:53.059 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+19:22:53.059 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrc
+19:22:53.059 [Test worker] DEBUG core.EventAnalysis - Event duration: 8
+19:22:53.060 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrd
+19:22:53.060 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgrd
+19:22:53.060 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgre
+19:22:53.061 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgre
+19:22:53.061 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+19:22:53.107 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+19:22:53.113 [Test worker] DEBUG core.EventReader - Amount of events collected: 4
+19:22:53.113 [Test worker] DEBUG core.EventReader - Grouping events by ID
+19:22:53.113 [Test worker] DEBUG core.EventReader - Aggregated: 2 pair of events.
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Event duration: 0
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Analyzed event probably has invalid timestamp or was not executed properly
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+19:22:53.115 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1</a> at 27 kwi 2020, 19:22:53</p>
+</div>
+</div>
+</body>
+</html>

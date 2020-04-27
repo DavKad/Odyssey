@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration status="INFO">
+    <Properties>
+        <Property name="baseDir">E:/Pulpit/challenge/</Property>
+    </Properties>
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="RollingFile"
+                     fileName="${baseDir}/challenge.log"
+                     filePattern="${baseDir}/challenge_%d{MM-dd-yyyy-HH-mm-ss}.log"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="5 MB"/>
+            </Policies>
+
+            <DefaultRolloverStrategy>
+                <Delete basePath="${baseDir}" maxDepth="2">
+                    <IfFileName glob="*challenge_*.log">
+                        <IfAny>
+                            <IfAccumulatedFileSize exceeds="225 MB"/>
+                            <IfAccumulatedFileCount exceeds="5"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </appenders>
+    <loggers>
+        <Logger name="conf.LoggerConfiguration" level="TRACE"/>
+        <logger name="org.hibernate" level="INFO"/>
+        <root level="DEBUG">
+            <appender-ref ref="Console" level="TRACE"/>
+            <appender-ref ref="RollingFile" level="TRACE"/>
+        </root>
+    </loggers>
+</configuration>

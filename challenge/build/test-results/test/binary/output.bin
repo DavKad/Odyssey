@@ -1,0 +1,40 @@
+W19:23:13.402 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+T19:23:13.523 [Test worker] DEBUG core.EventReader - Amount of events collected: 10
+K19:23:13.523 [Test worker] DEBUG core.EventReader - Grouping events by ID
+S19:23:13.526 [Test worker] DEBUG core.EventReader - Aggregated: 5 pair of events.
+Q19:23:13.528 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+}19:23:13.528 [Test worker] DEBUG core.EventAnalysis - Aggregated events with the same state. Cannot evaluate event duration
+Q19:23:13.529 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+I19:23:13.534 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+Q19:23:13.535 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrc
+I19:23:13.535 [Test worker] DEBUG core.EventAnalysis - Event duration: 8
+Q19:23:13.535 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrd
+†19:23:13.536 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgrd
+Q19:23:13.536 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgre
+†19:23:13.537 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgre
+Q19:23:13.537 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+W19:23:13.591 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+T19:23:13.597 [Test worker] DEBUG core.EventReader - Amount of events collected: 10
+K19:23:13.598 [Test worker] DEBUG core.EventReader - Grouping events by ID
+S19:23:13.598 [Test worker] DEBUG core.EventReader - Aggregated: 5 pair of events.
+Q19:23:13.598 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+I19:23:13.599 [Test worker] DEBUG core.EventAnalysis - Event duration: 5
+Q19:23:13.599 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+I19:23:13.599 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+Q19:23:13.599 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrc
+I19:23:13.600 [Test worker] DEBUG core.EventAnalysis - Event duration: 8
+Q19:23:13.600 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrd
+†19:23:13.600 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgrd
+Q19:23:13.601 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgre
+†19:23:13.601 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgre
+Q19:23:13.601 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+W19:23:13.659 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+S19:23:13.665 [Test worker] DEBUG core.EventReader - Amount of events collected: 4
+K19:23:13.666 [Test worker] DEBUG core.EventReader - Grouping events by ID
+S19:23:13.666 [Test worker] DEBUG core.EventReader - Aggregated: 2 pair of events.
+Q19:23:13.667 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+I19:23:13.667 [Test worker] DEBUG core.EventAnalysis - Event duration: 0
+‚19:23:13.668 [Test worker] DEBUG core.EventAnalysis - Analyzed event probably has invalid timestamp or was not executed properly
+Q19:23:13.668 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+I19:23:13.669 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+Q19:23:13.670 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.

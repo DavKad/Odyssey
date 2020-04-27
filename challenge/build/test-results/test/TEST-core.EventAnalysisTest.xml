@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="core.EventAnalysisTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-27T17:22:52" hostname="DESKTOP-TDPRECG" time="1.038">
+  <properties/>
+  <testcase name="analyzeDurationReturnedSmallerListCauseOfBadState" classname="core.EventAnalysisTest" time="0.926"/>
+  <testcase name="analyzeDurationReturnedSmallerListCauseOfWrongOfTheSameEvent" classname="core.EventAnalysisTest" time="0.058"/>
+  <testcase name="analyzeDurationWhenTimestampOfTheEventIsTheSame" classname="core.EventAnalysisTest" time="0.053"/>
+  <system-out><![CDATA[19:22:52.878 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+19:22:52.989 [Test worker] DEBUG core.EventReader - Amount of events collected: 10
+19:22:52.990 [Test worker] DEBUG core.EventReader - Grouping events by ID
+19:22:52.992 [Test worker] DEBUG core.EventReader - Aggregated: 5 pair of events.
+19:22:52.994 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+19:22:52.994 [Test worker] DEBUG core.EventAnalysis - Aggregated events with the same state. Cannot evaluate event duration
+19:22:52.994 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+19:22:52.999 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+19:22:52.999 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrc
+19:22:53.000 [Test worker] DEBUG core.EventAnalysis - Event duration: 8
+19:22:53.000 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrd
+19:22:53.001 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgrd
+19:22:53.001 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgre
+19:22:53.001 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgre
+19:22:53.002 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+19:22:53.052 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+19:22:53.057 [Test worker] DEBUG core.EventReader - Amount of events collected: 10
+19:22:53.057 [Test worker] DEBUG core.EventReader - Grouping events by ID
+19:22:53.058 [Test worker] DEBUG core.EventReader - Aggregated: 5 pair of events.
+19:22:53.058 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+19:22:53.058 [Test worker] DEBUG core.EventAnalysis - Event duration: 5
+19:22:53.058 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+19:22:53.059 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+19:22:53.059 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrc
+19:22:53.059 [Test worker] DEBUG core.EventAnalysis - Event duration: 8
+19:22:53.060 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrd
+19:22:53.060 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgrd
+19:22:53.060 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgre
+19:22:53.061 [Test worker] DEBUG core.EventAnalysis - Found invalid amount of events with the same ID related with event: scsmbstgre
+19:22:53.061 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+19:22:53.107 [Test worker] DEBUG core.EventReader - Collecting data from the log file
+19:22:53.113 [Test worker] DEBUG core.EventReader - Amount of events collected: 4
+19:22:53.113 [Test worker] DEBUG core.EventReader - Grouping events by ID
+19:22:53.113 [Test worker] DEBUG core.EventReader - Aggregated: 2 pair of events.
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgra
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Event duration: 0
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Analyzed event probably has invalid timestamp or was not executed properly
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Current event: scsmbstgrb
+19:22:53.114 [Test worker] DEBUG core.EventAnalysis - Event duration: 3
+19:22:53.115 [Test worker] DEBUG core.EventAnalysis - All events were analyzed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
